@@ -11,6 +11,7 @@
 @implementation Gameplay {
     CCPhysicsNode *_physicsNode;
     CCNode *_catapultArm;
+    CCNode *_levelNode;
 }
 
 // The following three methods activate touch handling, process touches and launch penguins
@@ -18,6 +19,8 @@
 -(void)didLoadFromCCB{
     // tell this scene to accept touches
     self.userInteractionEnabled = TRUE;
+    CCScene *level = [CCBReader loadAsScene:@"Levels/Level1"];
+    [_levelNode addChild:level];
 }
 
 // called on every touch in this scene
@@ -40,6 +43,8 @@
     CGPoint force = ccpMult(launchDirection, 8000);
     [penguin.physicsBody applyForce:force];
 }
+
+
     
     
 @end
