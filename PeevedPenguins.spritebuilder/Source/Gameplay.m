@@ -42,6 +42,17 @@
     CGPoint launchDirection = ccp(1,0);
     CGPoint force = ccpMult(launchDirection, 8000);
     [penguin.physicsBody applyForce:force];
+    
+    // CCActionFollow implements camera that follows the penguin
+    // ensure followed object is in visible area when starting
+    self.position = ccp(0,0);
+    CCActionFollow *follow = [CCActionFollow actionWithTarget:penguin worldBoundary:self.bounding];
+    [self runAction:follow];
+}
+
+- (void)retry {
+    // reload this level
+    [[CCDirector sharedDirector] replaceScene:[CCBReader loadAsScene:@"Gameplay"]];
 }
 
 
