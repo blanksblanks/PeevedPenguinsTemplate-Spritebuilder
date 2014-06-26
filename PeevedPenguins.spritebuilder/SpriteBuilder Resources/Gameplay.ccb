@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>10</integer>
+	<integer>11</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -50,6 +50,8 @@
 				<string></string>
 				<key>displayName</key>
 				<string>background</string>
+				<key>locked</key>
+				<true/>
 				<key>memberVarAssignmentName</key>
 				<string></string>
 				<key>memberVarAssignmentType</key>
@@ -1064,8 +1066,8 @@
 				<string>Size</string>
 				<key>value</key>
 				<array>
-					<real>568</real>
-					<real>384</real>
+					<real>960</real>
+					<real>320</real>
 					<integer>0</integer>
 					<integer>0</integer>
 				</array>

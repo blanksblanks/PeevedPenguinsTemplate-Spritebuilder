@@ -162,10 +162,10 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>-153.00001525878906</real>
-							<real>294</real>
+							<real>0.5</real>
+							<real>15</real>
 							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -176,8 +176,8 @@
 						<string>Point</string>
 						<key>value</key>
 						<array>
-							<real>-2.0486328601837158</real>
-							<real>1.8404296636581421</real>
+							<real>0.5</real>
+							<real>0.0</real>
 						</array>
 					</dict>
 					<dict>
@@ -455,6 +455,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
@@ -527,8 +529,6 @@
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
