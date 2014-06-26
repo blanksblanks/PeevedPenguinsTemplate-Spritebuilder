@@ -1181,8 +1181,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>129</real>
-							<real>145</real>
+							<real>156</real>
+							<real>222</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1237,6 +1237,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
