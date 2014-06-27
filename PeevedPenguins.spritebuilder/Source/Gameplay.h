@@ -8,6 +8,8 @@
 
 #import "CCNode.h"
 
-@interface Gameplay : CCNode
+// We need to add meaning to different kinds of collisions
+// Delegate when one object signs up to get informed on certain events
+@interface Gameplay : CCNode <CCPhysicsCollisionDelegate>
 
 @end

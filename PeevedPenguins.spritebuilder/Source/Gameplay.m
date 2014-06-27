@@ -28,6 +28,9 @@
     CCScene *level = [CCBReader loadAsScene:@"Levels/Level1"];
     [_levelNode addChild:level];
     
+    // sign up as collision delegate of physics node
+    _physicsNode.collisionDelegate = self;
+    
     // debug drawing is a COOL feature that visualizes physics bodies and joints
     // saves you lots of time when you encounter issues with physics world setup
     _physicsNode.debugDraw = TRUE;
@@ -39,6 +42,7 @@
 
     // deactivate collisions from invisible node
     _mouseJointNode.physicsBody.collisionMask = @[];
+
 }
 
 // called on every touch in this scene
@@ -111,7 +115,6 @@
     [self releaseCatapult];
 }
 
-
 - (void)launchPenguin {
     // loads the Penguin.ccb we have set up in Spritebuilder
     CCNode* penguin = [CCBReader load:@"Penguin"];
@@ -142,6 +145,10 @@
 - (void)retry {
     // reload this level
     [[CCDirector sharedDirector] replaceScene:[CCBReader loadAsScene:@"Gameplay"]];
+}
+
+- (void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair typeA:(CCNode *)nodeA typeB:(CCNode *)node{
+    CCLOG(@"Something collided with a seal!");
 }
 
 
