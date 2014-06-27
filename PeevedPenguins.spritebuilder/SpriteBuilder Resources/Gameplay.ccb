@@ -183,8 +183,8 @@
 					<string>Position</string>
 					<key>value</key>
 					<array>
-						<real>229.20001220703125</real>
-						<real>98.800010681152344</real>
+						<real>229.19534301757812</real>
+						<real>92.800018310546875</real>
 						<integer>0</integer>
 						<integer>0</integer>
 						<integer>0</integer>
@@ -197,14 +197,6 @@
 					<string>NodeReference</string>
 					<key>value</key>
 					<integer>5</integer>
-				</dict>
-				<dict>
-					<key>name</key>
-					<string>bodyB</string>
-					<key>type</key>
-					<string>NodeReference</string>
-					<key>value</key>
-					<integer>4</integer>
 				</dict>
 				<dict>
 					<key>name</key>
@@ -221,8 +213,8 @@
 					<string>Point</string>
 					<key>value</key>
 					<array>
-						<real>9.20001220703125</real>
-						<real>-8.6999893188476562</real>
+						<real>9.1953458786010742</real>
+						<real>-14.699985504150391</real>
 					</array>
 				</dict>
 				<dict>
@@ -267,8 +259,6 @@
 					</array>
 				</dict>
 			</array>
-			<key>selected</key>
-			<true/>
 		</dict>
 	</array>
 	<key>jsControlled</key>
@@ -1724,6 +1714,40 @@
 				<string></string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
+				<key>physicsBody</key>
+				<dict>
+					<key>affectedByGravity</key>
+					<true/>
+					<key>allowsRotation</key>
+					<true/>
+					<key>bodyShape</key>
+					<integer>1</integer>
+					<key>collisionCategories</key>
+					<array/>
+					<key>collisionMask</key>
+					<array/>
+					<key>collisionType</key>
+					<string></string>
+					<key>cornerRadius</key>
+					<real>13</real>
+					<key>density</key>
+					<real>25</real>
+					<key>dynamic</key>
+					<true/>
+					<key>elasticity</key>
+					<real>0.30000001192092896</real>
+					<key>friction</key>
+					<real>0.30000001192092896</real>
+					<key>points</key>
+					<array>
+						<array>
+							<real>33</real>
+							<real>20</real>
+						</array>
+					</array>
+					<key>polygons</key>
+					<array/>
+				</dict>
 				<key>properties</key>
 				<array>
 					<dict>
@@ -2034,6 +2058,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
