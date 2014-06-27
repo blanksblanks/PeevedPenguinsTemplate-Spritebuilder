@@ -7,6 +7,7 @@
 //
 
 #import "Gameplay.h"
+#import "CCPhysics+ObjectiveChipmunk.h"
 
 @implementation Gameplay {
     CCPhysicsNode *_physicsNode;
@@ -148,7 +149,27 @@
 }
 
 - (void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair seal:(CCNode *)nodeA wildcard:(CCNode *)node{
-    CCLOG(@"Something collided with a seal!");
+//    CCLOG(@"Something collided with a seal!");
+    
+    float energy = [pair totalKineticEnergy];
+    
+    // if energy is large enough, remove the seal
+    // first we retrieve the kientic energy of collision between seal and object
+    // if energy is large enough we remove the seal
+    // When we place the sealremoval handling code within a block using space
+    // method of _physicsNode and call addPostStepBlock method, Cocos2D will
+    // ensure that the code will only be run once per physics calculation, using
+    // the KEY property. Cocos2D will only run one code block per key and frame.
+    // So if collision handler is called thrice, we only call seal removal once.
+    if (energy > 5000.f) {
+        [[_physicsNode space] addPostStepBlock:^{
+            [self sealRemoved:nodeA];
+        } key:[nodeA];
+    }
+}
+         
+-(void)sealRemoved:(CCNode *)seal {
+    [seal removeFromParent];
 }
 
 
