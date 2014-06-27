@@ -16,6 +16,8 @@
     CCNode *_pullbackNode;
     CCNode *_mouseJointNode; // common name for drag&drop joint
     CCPhysicsJoint *_mouseJoint;
+    CCNode *_currentPenguin;
+    CCPhysicsJoint *_penguinCatapultJoint;
 }
 
 // The following three methods activate touch handling, process touches and launch penguins
@@ -53,6 +55,23 @@
         
         // setup a spring joint between the mouseJointNode and catapult
         _mouseJoint = [CCPhysicsJoint connectedSpringJointWithBodyA:_mouseJointNode.physicsBody bodyB:_catapultArm.physicsBody anchorA:ccp(0,0) anchorB:ccp(34, 138) restLength:0.f stiffness: 3000.f damping:150.f];
+        
+        // create a penguin from the ccb file
+        _currentPenguin = [CCBReader load:@"Penguin"];
+        // initially position it on the scoop. 34, 138 is the position in the node
+        // initial position is relative to the catapult arm and translate position
+        // to world coordinates
+        CGPoint penguinPosition = [_catapultArm convertToWorldSpace:ccp(34, 138)];
+        // convert world coordinates to the node space of _physicsNode because
+        // that is where penguin is located
+        _currentPenguin.position = [_physicsNode convertToNodeSpace:penguinPosition];
+        // add it to the physics node space
+        [_physicsNode addChild:_currentPenguin];
+        // we don't want the penguin to rotate in the scoop
+        _currentPenguin.physicsBody.allowsRotation = FALSE;
+        
+        // create joint to keep penguin fixed to scoop until catapult releases
+        _penguinCatapultJoint = [CCPhysicsJoint connectedPivotJointWithBodyA:_currentPenguin.physicsBody bodyB:_catapultArm.physicsBody anchorA:_currentPenguin.anchorPointInPoints];
     }
 }
 
@@ -67,6 +86,16 @@
         // releases the joint and lets the catapult snap back
         [_mouseJoint invalidate];
         _mouseJoint = nil;
+        
+        // releases the joint and lets the penguin fly
+        [_penguinCatapultJoint invalidate];
+        _penguinCatapultJoint = nil;
+        
+        // after snapping rotation is fine
+        _currentPenguin.physicsBody.allowsRotation = TRUE;
+        
+        // follow the flying penguin
+        CCActionFollow *follow = [CCActionFollow actionWithTarget:_currentPenguin worldBoundary:self.boundingBox];
     }
 }
 
