@@ -183,8 +183,8 @@
 					<string>Position</string>
 					<key>value</key>
 					<array>
-						<real>229.19532775878906</real>
-						<real>96.399993896484375</real>
+						<real>219.19532775878906</real>
+						<real>155.89999389648438</real>
 						<integer>0</integer>
 						<integer>0</integer>
 						<integer>0</integer>
@@ -221,8 +221,8 @@
 					<string>Point</string>
 					<key>value</key>
 					<array>
-						<real>5.5953340530395508</real>
-						<real>2.899996280670166</real>
+						<real>6.5953369140625</real>
+						<real>22.899993896484375</real>
 					</array>
 				</dict>
 				<dict>
@@ -598,7 +598,7 @@
 										<key>value</key>
 										<array>
 											<real>244.59999084472656</real>
-											<real>182</real>
+											<real>165</real>
 											<integer>0</integer>
 											<integer>0</integer>
 											<integer>0</integer>
@@ -1425,7 +1425,7 @@
 										<string>Position</string>
 										<key>value</key>
 										<array>
-											<real>0.0</real>
+											<real>1</real>
 											<real>0.0</real>
 											<integer>0</integer>
 											<integer>0</integer>
@@ -1696,8 +1696,6 @@
 								<string>WaitingPenguin.ccb</string>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -1760,8 +1758,6 @@
 								<string>WaitingPenguin.ccb</string>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -1824,8 +1820,6 @@
 								<string>WaitingPenguin.ccb</string>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 				</array>
 				<key>customClass</key>
@@ -2349,9 +2343,9 @@
 			<key>name</key>
 			<string>Default Timeline</string>
 			<key>offset</key>
-			<real>0.0</real>
+			<real>6.046875</real>
 			<key>position</key>
-			<real>0.0</real>
+			<real>10</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
