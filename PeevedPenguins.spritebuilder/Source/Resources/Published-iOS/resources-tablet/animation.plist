@@ -2,15 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>frames</key>
+	<dict/>
 	<key>metadata</key>
 	<dict>
-		<key>version</key>
-		<integer>1</integer>
+		<key>format</key>
+		<integer>2</integer>
+		<key>size</key>
+		<string>{8, 8}</string>
+		<key>textureFileName</key>
+		<string>animation.png</string>
 	</dict>
-	<key>spriteFrameFiles</key>
-	<array>
-		<string>animation.plist</string>
-		<string>PeevedPenguinsAssets.plist</string>
-	</array>
 </dict>
 </plist>
