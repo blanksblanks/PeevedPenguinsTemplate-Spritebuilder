@@ -164,7 +164,7 @@
     if (energy > 5000.f) {
         [[_physicsNode space] addPostStepBlock:^{
             [self sealRemoved:nodeA];
-        } key:[nodeA];
+        } key:nodeA];
     }
 }
          
