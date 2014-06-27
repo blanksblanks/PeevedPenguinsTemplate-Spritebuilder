@@ -183,8 +183,8 @@
 					<string>Position</string>
 					<key>value</key>
 					<array>
-						<real>230.39533996582031</real>
-						<real>97.600021362304688</real>
+						<real>229.19532775878906</real>
+						<real>96.399993896484375</real>
 						<integer>0</integer>
 						<integer>0</integer>
 						<integer>0</integer>
@@ -221,8 +221,8 @@
 					<string>Point</string>
 					<key>value</key>
 					<array>
-						<real>6.79534912109375</real>
-						<real>14.100021362304688</real>
+						<real>5.5953340530395508</real>
+						<real>2.899996280670166</real>
 					</array>
 				</dict>
 				<dict>
@@ -598,7 +598,7 @@
 										<key>value</key>
 										<array>
 											<real>244.59999084472656</real>
-											<real>172</real>
+											<real>182</real>
 											<integer>0</integer>
 											<integer>0</integer>
 											<integer>0</integer>
@@ -979,8 +979,6 @@
 										</array>
 									</dict>
 								</array>
-								<key>selected</key>
-								<true/>
 							</dict>
 							<dict>
 								<key>UUID</key>
@@ -1093,6 +1091,70 @@
 										</array>
 									</dict>
 								</array>
+							</dict>
+							<dict>
+								<key>UUID</key>
+								<integer>2</integer>
+								<key>baseClass</key>
+								<string>CCBFile</string>
+								<key>children</key>
+								<array/>
+								<key>customClass</key>
+								<string></string>
+								<key>displayName</key>
+								<string>CCBbear</string>
+								<key>memberVarAssignmentName</key>
+								<string></string>
+								<key>memberVarAssignmentType</key>
+								<integer>1</integer>
+								<key>properties</key>
+								<array>
+									<dict>
+										<key>name</key>
+										<string>name</string>
+										<key>type</key>
+										<string>StringSimple</string>
+										<key>value</key>
+										<string></string>
+									</dict>
+									<dict>
+										<key>name</key>
+										<string>position</string>
+										<key>type</key>
+										<string>Position</string>
+										<key>value</key>
+										<array>
+											<real>81</real>
+											<real>89.000030517578125</real>
+											<integer>0</integer>
+											<integer>0</integer>
+											<integer>0</integer>
+										</array>
+									</dict>
+									<dict>
+										<key>name</key>
+										<string>scale</string>
+										<key>type</key>
+										<string>ScaleLock</string>
+										<key>value</key>
+										<array>
+											<real>1</real>
+											<real>1</real>
+											<false/>
+											<integer>0</integer>
+										</array>
+									</dict>
+									<dict>
+										<key>name</key>
+										<string>ccbFile</string>
+										<key>type</key>
+										<string>CCBFile</string>
+										<key>value</key>
+										<string>Bear.ccb</string>
+									</dict>
+								</array>
+								<key>selected</key>
+								<true/>
 							</dict>
 							<dict>
 								<key>UUID</key>
@@ -1572,68 +1634,6 @@
 								<string>Float</string>
 								<key>value</key>
 								<real>0.5</real>
-							</dict>
-						</array>
-					</dict>
-					<dict>
-						<key>UUID</key>
-						<integer>2</integer>
-						<key>baseClass</key>
-						<string>CCBFile</string>
-						<key>children</key>
-						<array/>
-						<key>customClass</key>
-						<string></string>
-						<key>displayName</key>
-						<string>CCBbear</string>
-						<key>memberVarAssignmentName</key>
-						<string></string>
-						<key>memberVarAssignmentType</key>
-						<integer>1</integer>
-						<key>properties</key>
-						<array>
-							<dict>
-								<key>name</key>
-								<string>name</string>
-								<key>type</key>
-								<string>StringSimple</string>
-								<key>value</key>
-								<string></string>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>position</string>
-								<key>type</key>
-								<string>Position</string>
-								<key>value</key>
-								<array>
-									<real>81</real>
-									<real>89.000030517578125</real>
-									<integer>0</integer>
-									<integer>0</integer>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>scale</string>
-								<key>type</key>
-								<string>ScaleLock</string>
-								<key>value</key>
-								<array>
-									<real>1</real>
-									<real>1</real>
-									<false/>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>ccbFile</string>
-								<key>type</key>
-								<string>CCBFile</string>
-								<key>value</key>
-								<string>Bear.ccb</string>
 							</dict>
 						</array>
 					</dict>
