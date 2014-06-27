@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>5</integer>
+	<integer>8</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -262,7 +262,7 @@
 						<key>type</key>
 						<string>Degrees</string>
 						<key>value</key>
-						<real>20</real>
+						<real>-15</real>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -418,7 +418,7 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>1</real>
+			<real>2</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
