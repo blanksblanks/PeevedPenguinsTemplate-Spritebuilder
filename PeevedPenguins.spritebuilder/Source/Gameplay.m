@@ -13,6 +13,7 @@
     CCNode *_catapultArm;
     CCNode *_levelNode;
     CCNode *_contentNode;
+    CCNode *_pullbackNode;
 }
 
 // The following three methods activate touch handling, process touches and launch penguins
@@ -26,6 +27,11 @@
     // debug drawing is a COOL feature that visualizes physics bodies and joints
     // saves you lots of time when you encounter issues with physics world setup
     _physicsNode.debugDraw = TRUE;
+    // don't forget to declare each object!
+    
+    // nothing shall collide with our invisible node when we set collisionMask
+    // to an empty array
+    _pullbackNode.physicsBody.collisionMask = @[];
 }
 
 // called on every touch in this scene
