@@ -12,6 +12,7 @@
     CCPhysicsNode *_physicsNode;
     CCNode *_catapultArm;
     CCNode *_levelNode;
+    CCNode *_contentNode;
 }
 
 // The following three methods activate touch handling, process touches and launch penguins
@@ -47,7 +48,12 @@
     // ensure followed object is in visible area when starting
     self.position = ccp(0,0);
     CCActionFollow *follow = [CCActionFollow actionWithTarget:penguin worldBoundary:self.boundingBox];
-    [self runAction:follow];
+    [_contentNode runAction:follow];
+    // Making contentNode perform action instead of Gameplay scene (self)
+    // ensures that the retry button outside contentNode is always visible
+    // because now the contentNode is scrolling not the complete Gameplay scene
+    // since contentNode is only used to structure scene and has no content size
+    // we still use bounding box of self to define world boundaries
 }
 
 - (void)retry {
