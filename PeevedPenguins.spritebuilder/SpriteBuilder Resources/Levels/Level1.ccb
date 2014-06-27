@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>24</integer>
+	<integer>25</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -2383,7 +2383,7 @@
 			</dict>
 			<dict>
 				<key>UUID</key>
-				<integer>23</integer>
+				<integer>24</integer>
 				<key>baseClass</key>
 				<string>CCSprite</string>
 				<key>children</key>
@@ -2391,7 +2391,7 @@
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>squareblock</string>
+				<string>tallblock</string>
 				<key>memberVarAssignmentName</key>
 				<string></string>
 				<key>memberVarAssignmentType</key>
@@ -2428,14 +2428,14 @@
 						</array>
 						<array>
 							<real>0.0</real>
-							<real>24</real>
+							<real>47</real>
 						</array>
 						<array>
-							<real>24</real>
-							<real>24</real>
+							<real>23</real>
+							<real>47</real>
 						</array>
 						<array>
-							<real>24</real>
+							<real>23</real>
 							<real>0.0</real>
 						</array>
 					</array>
@@ -2443,16 +2443,16 @@
 					<array>
 						<array>
 							<array>
-								<real>24</real>
+								<real>23</real>
 								<real>0.0</real>
 							</array>
 							<array>
-								<real>24</real>
-								<real>24</real>
+								<real>23</real>
+								<real>47</real>
 							</array>
 							<array>
 								<real>0.0</real>
-								<real>24</real>
+								<real>47</real>
 							</array>
 							<array>
 								<real>0.0</real>
@@ -2479,7 +2479,7 @@
 						<key>value</key>
 						<array>
 							<real>478</real>
-							<real>247</real>
+							<real>259</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -2517,7 +2517,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>PeevedPenguinsAssets/squareblock.png</string>
+							<string>PeevedPenguinsAssets/tallblock.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -2534,6 +2534,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
